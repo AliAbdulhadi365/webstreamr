@@ -13,26 +13,27 @@ import { BlockedError, HttpError, NotFoundError, QueueIsFullError, TimeoutError,
 import { BlockedReason, Context } from '../types';
 import { envGet, envGetAppId } from './env';
 
+interface FlareSolverrSolution {
+  url: string;
+  status: number;
+  cookies: {
+    domain: string;
+    expiry: number;
+    httpOnly: boolean;
+    name: string;
+    path: string;
+    sameSite: string;
+    secure: boolean;
+    value: string;
+  }[];
+  userAgent: string;
+  headers: Record<string, string>;
+  response: string;
+}
 interface FlareSolverrResult {
   status: string;
   message: string;
-  solution: {
-    url: string;
-    status: number;
-    cookies: {
-      domain: string;
-      expiry: number;
-      httpOnly: boolean;
-      name: string;
-      path: string;
-      sameSite: string;
-      secure: boolean;
-      value: string;
-    }[];
-    userAgent: string;
-    headers: Record<string, string>;
-    response: string;
-  };
+  solution: FlareSolverrSolution;
   startTimeStamp: number;
   endTimeStamp: number;
   version: string;
@@ -54,7 +55,8 @@ export class Fetcher {
   private readonly DEFAULT_QUEUE_LIMIT = 50;
   private readonly DEFAULT_QUEUE_TIMEOUT = 10000;
   private readonly DEFAULT_TIMEOUTS_COUNT_THROW = 30;
-  private readonly TIMEOUT_CACHE_TTL = 3600000; // 1h
+  private readonly TIMEOUT_CACHE_TTL = 60 * 60 * 1000; // 1h
+  private readonly FLARESOLVERR_CACHE_TTL = 15 * 60 * 1000; // 15m
   private readonly MAX_WAIT_RETRY_AFTER = 10000;
 
   private readonly axios: AxiosInstance;
@@ -73,6 +75,7 @@ export class Fetcher {
   private readonly httpStatus = new Map<string, Record<number, number>>();
   private readonly httpStatusMutex = new Mutex();
 
+  private readonly flareSolverrCache = new Cacheable({ primary: new Keyv({ store: new CacheableMemory({ lruSize: 1024 }) }) });
   private readonly flareSolverrMutexes = new Map<string, Mutex>();
 
   public constructor(axios: AxiosInstance, logger: winston.Logger) {
@@ -244,6 +247,13 @@ export class Fetcher {
         throw new BlockedError(url, BlockedReason.cloudflare_challenge, response.headers);
       }
 
+      const cachedSolution = await this.flareSolverrCache.get<FlareSolverrSolution>(url.href);
+      if (cachedSolution) {
+        response.status = cachedSolution.status;
+        response.data = cachedSolution.response;
+        return response;
+      }
+
       const session = `${envGetAppId()}_${url.host}`;
 
       let mutex = this.flareSolverrMutexes.get(session);
@@ -296,7 +306,9 @@ export class Fetcher {
 
       this.hostUserAgentMap.set(url.host, challengeResult.solution.userAgent);
 
+      response.status = challengeResult.solution.status;
       response.data = challengeResult.solution.response;
+      await this.flareSolverrCache.set<FlareSolverrSolution>(url.href, challengeResult.solution, this.FLARESOLVERR_CACHE_TTL);
 
       return response;
     }

@@ -1,5 +1,255 @@
 # Changelog
 
+## [0.69.1](https://github.com/webstreamr/webstreamr/compare/v0.69.0...v0.69.1) (2026-03-27)
+
+
+### Bug Fixes
+
+* **source:** exclude ad videos in HDHub4u ([65191cf](https://github.com/webstreamr/webstreamr/commit/65191cfc8dad8f58b44e2c355b9adc600b99b2bf))
+* **source:** remove stray console.log ([bd2dec0](https://github.com/webstreamr/webstreamr/commit/bd2dec03925d8b7760044dbfaaaec00b48f7cb66))
+
+## [0.69.0](https://github.com/webstreamr/webstreamr/compare/v0.68.0...v0.69.0) (2026-03-27)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency axios to v1.14.0 ([#800](https://github.com/webstreamr/webstreamr/issues/800)) ([ad47aec](https://github.com/webstreamr/webstreamr/commit/ad47aecea3f3d34700add442e023bd54f73451c8))
+* **extractor:** detect languages from HubCloud title ([89e57d4](https://github.com/webstreamr/webstreamr/commit/89e57d48d95a6f8dd6446048ae72de51dd481f37))
+* **extractor:** detect resolution from HubCloud title ([f192fd0](https://github.com/webstreamr/webstreamr/commit/f192fd0b7523094746148989e0cf06717db8152e))
+* remove duplicate URLs ([b87bf62](https://github.com/webstreamr/webstreamr/commit/b87bf62362f3cd6b3ea055ecdaec44511bf2ec84))
+
+
+### Features
+
+* **source:** add HDHub4u ([43f0445](https://github.com/webstreamr/webstreamr/commit/43f04455f17063e459df7e7a34af44de36afd6fc))
+
+
+### Bug Fixes
+
+* **extractor:** don't fail for HubDrive if HubCloud link is missing ([557efd2](https://github.com/webstreamr/webstreamr/commit/557efd207945ea7ada0bcaf475b0b9b9d60d8f5b))
+
+
+### Code Refactoring
+
+* **source:** extract hd hub link redirect resolver ([43637a2](https://github.com/webstreamr/webstreamr/commit/43637a2ff4280db208ec9c94c0a5d52a49dc6672))
+
+## [0.68.0](https://github.com/webstreamr/webstreamr/compare/v0.67.0...v0.68.0) (2026-03-26)
+
+
+### Features
+
+* exclude resolution config options ([4c7da5d](https://github.com/webstreamr/webstreamr/commit/4c7da5dc208a1854a17aa43a26553fb6c83e7287))
+
+## [0.67.0](https://github.com/webstreamr/webstreamr/compare/v0.66.16...v0.67.0) (2026-03-25)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency typescript-eslint to v8.57.2 ([#795](https://github.com/webstreamr/webstreamr/issues/795)) ([5cffa11](https://github.com/webstreamr/webstreamr/commit/5cffa112bac29ee4eb18958f5345f0a3ae68ff30))
+
+
+### Features
+
+* **extractor:** support FSLv2 server in HubCloud ([e36d460](https://github.com/webstreamr/webstreamr/commit/e36d460d57bdc071fc111b1459ea26184a3233e3))
+
+## [0.66.16](https://github.com/webstreamr/webstreamr/compare/v0.66.15...v0.66.16) (2026-03-23)
+
+
+### Documentation
+
+* remove mention of XDMovies ([b60496b](https://github.com/webstreamr/webstreamr/commit/b60496bf224f1869626bceaa7e3eebabfdec8754))
+
+
+### Bug Fixes
+
+* **source:** remove XDMovies ([ff39c59](https://github.com/webstreamr/webstreamr/commit/ff39c594755b586ec4214d942c04026b873854fd))
+
+## [0.66.15](https://github.com/webstreamr/webstreamr/compare/v0.66.14...v0.66.15) (2026-03-23)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([#792](https://github.com/webstreamr/webstreamr/issues/792)) ([fc3d61b](https://github.com/webstreamr/webstreamr/commit/fc3d61b05a31c00607c7309ed04c8438c8f344f7))
+* **deps:** update dependency cacheable to v2.3.4 ([#789](https://github.com/webstreamr/webstreamr/issues/789)) ([b2b9760](https://github.com/webstreamr/webstreamr/commit/b2b9760445f7b1a987f5aa795ef3a5302e753178))
+
+
+### Bug Fixes
+
+* **extractor:** hard-code referer for Dropload and SuperVideo for now ([eecf9c4](https://github.com/webstreamr/webstreamr/commit/eecf9c42c5f95266fe1ec0deba1042741efe7306))
+
+## [0.66.14](https://github.com/webstreamr/webstreamr/compare/v0.66.13...v0.66.14) (2026-03-17)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([#784](https://github.com/webstreamr/webstreamr/issues/784)) ([9eca05e](https://github.com/webstreamr/webstreamr/commit/9eca05efc5c56dc0c008b6cac6314c2849e11382))
+* **deps:** update dependency typescript-eslint to v8.57.1 ([#786](https://github.com/webstreamr/webstreamr/issues/786)) ([b769cd0](https://github.com/webstreamr/webstreamr/commit/b769cd0aa1f8284c921f68c620fa01565097952b))
+* **extractor:** add cacheVersion and bump it for HubCloud and HubDrive ([ee3effa](https://github.com/webstreamr/webstreamr/commit/ee3effaf0079ee932d6b8a93ead0f095ea7e4906))
+
+
+### Bug Fixes
+
+* **extractor:** add PixelDrain referer to HubCloud extractor ([693a77e](https://github.com/webstreamr/webstreamr/commit/693a77e73e984e81aee9a702092c5ef098d4e48f))
+* **extractor:** reduce HubCloud + HubDrive ttl to 12h ([296f047](https://github.com/webstreamr/webstreamr/commit/296f0478b03c4dfd4927c0e53037ce8f9de64872))
+
+## [0.66.13](https://github.com/webstreamr/webstreamr/compare/v0.66.12...v0.66.13) (2026-03-14)
+
+
+### Bug Fixes
+
+* downgrade sqlite for now ([66ee72b](https://github.com/webstreamr/webstreamr/commit/66ee72baf02560ca4bed0864869ab8046e85d0eb))
+
+## [0.66.12](https://github.com/webstreamr/webstreamr/compare/v0.66.11...v0.66.12) (2026-03-14)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([#779](https://github.com/webstreamr/webstreamr/issues/779)) ([b7093ed](https://github.com/webstreamr/webstreamr/commit/b7093ed4ae37cc4e4a2603bd6c8dac0118f8e617))
+* **deps:** update dependency slugify to v1.6.8 ([#777](https://github.com/webstreamr/webstreamr/issues/777)) ([20289ea](https://github.com/webstreamr/webstreamr/commit/20289eaeaf8710c4cfb60d661061c62a3cfa4aeb))
+
+
+### Bug Fixes
+
+* require sqlite with alpine fix ([0f004dc](https://github.com/webstreamr/webstreamr/commit/0f004dc878c1c1a24cae553100426c61d45841a9))
+
+## [0.66.11](https://github.com/webstreamr/webstreamr/compare/v0.66.10...v0.66.11) (2026-03-13)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([#764](https://github.com/webstreamr/webstreamr/issues/764)) ([394dc91](https://github.com/webstreamr/webstreamr/commit/394dc91bfa0a2382ad7d084f02a2f99b7eb91ca5))
+* **deps:** update dependency @types/node to v24.12.0 ([#763](https://github.com/webstreamr/webstreamr/issues/763)) ([7de0468](https://github.com/webstreamr/webstreamr/commit/7de046838d8c851caf7ec164c441b77907705c89))
+* **deps:** update dependency express-rate-limit to v8.3.1 ([#765](https://github.com/webstreamr/webstreamr/issues/765)) ([e90b558](https://github.com/webstreamr/webstreamr/commit/e90b5583a7c2d005e53b60f8152eb4e37dd6591b))
+* **deps:** update dependency tough-cookie to v6.0.1 ([#773](https://github.com/webstreamr/webstreamr/issues/773)) ([2734fb4](https://github.com/webstreamr/webstreamr/commit/2734fb4d0db6c658022ba1d6a89b90c7194d84b9))
+* **deps:** update dependency typescript-eslint to v8.57.0 ([#766](https://github.com/webstreamr/webstreamr/issues/766)) ([ad3d0b3](https://github.com/webstreamr/webstreamr/commit/ad3d0b317e476621bef309b95fd683bd0b47fa38))
+* **deps:** update eslint monorepo to v9.39.4 ([#761](https://github.com/webstreamr/webstreamr/issues/761)) ([955872a](https://github.com/webstreamr/webstreamr/commit/955872a8254e1ab93e298df720ae1e618d2fd3bc))
+* **deps:** update jest monorepo to v30.3.0 ([#767](https://github.com/webstreamr/webstreamr/issues/767)) ([b522314](https://github.com/webstreamr/webstreamr/commit/b5223148c7ed336136c4182aaaa59f031ea6dc2a))
+
+
+### Bug Fixes
+
+* **deps:** update dependency sqlite3 to v6 ([#772](https://github.com/webstreamr/webstreamr/issues/772)) ([930e819](https://github.com/webstreamr/webstreamr/commit/930e8191beac055e8b82ee9a79bd78f56b2613a2))
+* **extractor:** add missing VOE domain ([c78c1ad](https://github.com/webstreamr/webstreamr/commit/c78c1ad628c81391bdead00273e3a346983b1f45))
+* **source:** switch to new Frembed URL and resolve link redirects ([8fe4cc5](https://github.com/webstreamr/webstreamr/commit/8fe4cc5a9bf37612647ed348cf76702fdbf6857e))
+
+## [0.66.10](https://github.com/webstreamr/webstreamr/compare/v0.66.9...v0.66.10) (2026-03-06)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @stylistic/eslint-plugin to v5.10.0 ([#760](https://github.com/webstreamr/webstreamr/issues/760)) ([4e43650](https://github.com/webstreamr/webstreamr/commit/4e436509bf8b6bed5d1d879756f7cccba28b0d6a))
+* **deps:** update dependency axios-cache-interceptor to v1.12.0 ([#755](https://github.com/webstreamr/webstreamr/issues/755)) ([edebd86](https://github.com/webstreamr/webstreamr/commit/edebd860aa3c4c01b6444c0296e21279ea3231ff))
+* **deps:** update dependency express-rate-limit to v8.3.0 ([#758](https://github.com/webstreamr/webstreamr/issues/758)) ([f58e0e1](https://github.com/webstreamr/webstreamr/commit/f58e0e1f4f6c4db1e4efbeba6278a5358d1f6a56))
+* **deps:** update docker/build-push-action action to v7 ([#759](https://github.com/webstreamr/webstreamr/issues/759)) ([737a806](https://github.com/webstreamr/webstreamr/commit/737a8063a8921a8fd0247e2cb3c053030b018294))
+* **deps:** update docker/login-action action to v4 ([#750](https://github.com/webstreamr/webstreamr/issues/750)) ([6b8363b](https://github.com/webstreamr/webstreamr/commit/6b8363bd9c970b8760a1412a66086b120422567f))
+* **deps:** update docker/setup-buildx-action action to v4 ([#757](https://github.com/webstreamr/webstreamr/issues/757)) ([d2e72b0](https://github.com/webstreamr/webstreamr/commit/d2e72b0756e8a86d64e6c70e168b689429d4b3d7))
+
+
+### Bug Fixes
+
+* **extractor:** use Dropload hosting URL origin as Referer ([423abf2](https://github.com/webstreamr/webstreamr/commit/423abf2479b7dffde3138c6043eb1f2854e4b077))
+
+## [0.66.9](https://github.com/webstreamr/webstreamr/compare/v0.66.8...v0.66.9) (2026-03-04)
+
+
+### Miscellaneous Chores
+
+* add referral ([a5e429f](https://github.com/webstreamr/webstreamr/commit/a5e429fea365ee04a3bd32f07676a852511be852))
+* **deps:** update docker/setup-qemu-action action to v4 ([#749](https://github.com/webstreamr/webstreamr/issues/749)) ([b36e148](https://github.com/webstreamr/webstreamr/commit/b36e1484eb51b7d86352c6f78f2f4c21adba28d0))
+
+
+### Documentation
+
+* use default branch for tests badge ([6d5870c](https://github.com/webstreamr/webstreamr/commit/6d5870ccb219bcb6448aac732914d02f59b8b602))
+
+## [0.66.8](https://github.com/webstreamr/webstreamr/compare/v0.66.7...v0.66.8) (2026-03-02)
+
+
+### Documentation
+
+* add known issues / limitations section ([438387f](https://github.com/webstreamr/webstreamr/commit/438387faee8fb8604f4de7c1a7876be40d79fa79))
+* add more limitations ([aa820e1](https://github.com/webstreamr/webstreamr/commit/aa820e1f6463d216ad12c44587b7134f424e1c9a))
+* add more references ([38d0ac5](https://github.com/webstreamr/webstreamr/commit/38d0ac53059ed338718a759c76c425a2458fa5c2))
+
+
+### Bug Fixes
+
+* **extractor:** use Dropload playlist headers also internally ([7dfc599](https://github.com/webstreamr/webstreamr/commit/7dfc599de900c34703e41eeea5c4e459da6380cf))
+
+## [0.66.7](https://github.com/webstreamr/webstreamr/compare/v0.66.6...v0.66.7) (2026-03-02)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([#745](https://github.com/webstreamr/webstreamr/issues/745)) ([8ea6d4f](https://github.com/webstreamr/webstreamr/commit/8ea6d4fe3709067c1a2c30dcbf53567e10f102dc))
+* **deps:** update dependency @types/node to v24.11.0 ([#744](https://github.com/webstreamr/webstreamr/issues/744)) ([282b3d0](https://github.com/webstreamr/webstreamr/commit/282b3d05b32bbcc6e2ac2137e3cb96974ee4ddfb))
+* **deps:** update dependency axios to v1.13.6 ([#736](https://github.com/webstreamr/webstreamr/issues/736)) ([50e024a](https://github.com/webstreamr/webstreamr/commit/50e024a3ea1b2326fad7f2fcb59324d34a8561a2))
+* **deps:** update dependency cacheable to v2.3.3 ([#737](https://github.com/webstreamr/webstreamr/issues/737)) ([168d028](https://github.com/webstreamr/webstreamr/commit/168d0280dcef9402815e353bc162af5bbf11af84))
+
+
+### Bug Fixes
+
+* **extractor:** add referer as proxy header for Dropload ([bbb80f3](https://github.com/webstreamr/webstreamr/commit/bbb80f3cf0b918668149f5f6be1a2c38157a414b))
+
+## [0.66.6](https://github.com/webstreamr/webstreamr/compare/v0.66.5...v0.66.6) (2026-02-25)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency minimatch to v10.2.3 ([#715](https://github.com/webstreamr/webstreamr/issues/715)) ([ce4637e](https://github.com/webstreamr/webstreamr/commit/ce4637ea80adaee5f7c325defd9676533dfb884e))
+* **deps:** update dependency minimatch to v10.2.4 ([#735](https://github.com/webstreamr/webstreamr/issues/735)) ([354c273](https://github.com/webstreamr/webstreamr/commit/354c2731d8ffe1948f5ff8647a7be668c6ce5cbd))
+* **deps:** update dependency typescript-eslint to v8.56.1 ([#734](https://github.com/webstreamr/webstreamr/issues/734)) ([73ce5f3](https://github.com/webstreamr/webstreamr/commit/73ce5f372d5c2c2be39d1f36fa104afbdee41b77))
+* **fetcher:** cache whole flaresolverr solution and also use status from it ([221fa98](https://github.com/webstreamr/webstreamr/commit/221fa989f4c51e13308a41e59dd088a2b0128e45))
+
+## [0.66.5](https://github.com/webstreamr/webstreamr/compare/v0.66.4...v0.66.5) (2026-02-23)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([#730](https://github.com/webstreamr/webstreamr/issues/730)) ([6c10236](https://github.com/webstreamr/webstreamr/commit/6c102362fde48af0a6857f8ab66bc42385a3411a))
+
+
+### Bug Fixes
+
+* **extractor:** remove StreamUp ([556b20e](https://github.com/webstreamr/webstreamr/commit/556b20e6690c251e86e10740b45ca0b4c614b222))
+* **source:** add support for old XDMovies uploads without URL protector ([964e979](https://github.com/webstreamr/webstreamr/commit/964e9794695201367900ae6e4eda4ad439652222))
+
+
+### Performance Improvements
+
+* cache all non-error requests for 15m, tune axios caching ([ae10810](https://github.com/webstreamr/webstreamr/commit/ae10810caaebb909ffe5c51c37dc4a01184391a9))
+
+## [0.66.4](https://github.com/webstreamr/webstreamr/compare/v0.66.3...v0.66.4) (2026-02-21)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([#708](https://github.com/webstreamr/webstreamr/issues/708)) ([ccdd460](https://github.com/webstreamr/webstreamr/commit/ccdd4600bba1041b5f2f2515c730856eb729991f))
+* **deps:** lock file maintenance ([#718](https://github.com/webstreamr/webstreamr/issues/718)) ([d0f3e0f](https://github.com/webstreamr/webstreamr/commit/d0f3e0f9316770fe47d0395269dafe155fa1e17d))
+* **deps:** update dependency @stylistic/eslint-plugin to v5.8.0 ([#709](https://github.com/webstreamr/webstreamr/issues/709)) ([1ae12fa](https://github.com/webstreamr/webstreamr/commit/1ae12fa0f790566193bfe42f3457fe9d4e976502))
+* **deps:** update dependency @stylistic/eslint-plugin to v5.9.0 ([#723](https://github.com/webstreamr/webstreamr/issues/723)) ([bd160eb](https://github.com/webstreamr/webstreamr/commit/bd160eb32ce3719bfbebb468a5b2e45d9b4a35ce))
+* **deps:** update dependency @types/node to v24.10.12 ([#707](https://github.com/webstreamr/webstreamr/issues/707)) ([3f35ecf](https://github.com/webstreamr/webstreamr/commit/3f35ecf6f3eab3c2c789a176be73d1a80539762d))
+* **deps:** update dependency @types/node to v24.10.13 ([#717](https://github.com/webstreamr/webstreamr/issues/717)) ([524630d](https://github.com/webstreamr/webstreamr/commit/524630d671a74dd844ce0f629b4ccae1f88cf6e6))
+* **deps:** update dependency axios to v1.13.5 ([#705](https://github.com/webstreamr/webstreamr/issues/705)) ([de13209](https://github.com/webstreamr/webstreamr/commit/de13209709071f8f5241f209a0dbc75232925c3c))
+* **deps:** update dependency glob to v13.0.1 ([#698](https://github.com/webstreamr/webstreamr/issues/698)) ([72c191f](https://github.com/webstreamr/webstreamr/commit/72c191fbc10ed9524e698609736f01de0f236c43))
+* **deps:** update dependency glob to v13.0.2 ([#711](https://github.com/webstreamr/webstreamr/issues/711)) ([eccea52](https://github.com/webstreamr/webstreamr/commit/eccea520b7cf8b997a694c6f4fded3cbc74b960a))
+* **deps:** update dependency glob to v13.0.3 ([#714](https://github.com/webstreamr/webstreamr/issues/714)) ([65a0e57](https://github.com/webstreamr/webstreamr/commit/65a0e57ab9694648977822f73d89e641feabf893))
+* **deps:** update dependency glob to v13.0.4 ([#720](https://github.com/webstreamr/webstreamr/issues/720)) ([245dcf6](https://github.com/webstreamr/webstreamr/commit/245dcf6007b6e02d767246463b224e18eecaccb8))
+* **deps:** update dependency glob to v13.0.5 ([#721](https://github.com/webstreamr/webstreamr/issues/721)) ([fb354b4](https://github.com/webstreamr/webstreamr/commit/fb354b47461f58a25c245dcac65ca2de26302207))
+* **deps:** update dependency glob to v13.0.6 ([#724](https://github.com/webstreamr/webstreamr/issues/724)) ([23db19d](https://github.com/webstreamr/webstreamr/commit/23db19d07317350d007b646c6915bb9fef60b165))
+* **deps:** update dependency nodemon to v3.1.12 ([#725](https://github.com/webstreamr/webstreamr/issues/725)) ([5bfbd94](https://github.com/webstreamr/webstreamr/commit/5bfbd94e51e1c7291e12ac912578fcbf6bb39232))
+* **deps:** update dependency nodemon to v3.1.13 ([#726](https://github.com/webstreamr/webstreamr/issues/726)) ([728ed7e](https://github.com/webstreamr/webstreamr/commit/728ed7ec0631d8de8df12626cdea857b1aad1059))
+* **deps:** update dependency nodemon to v3.1.14 ([#728](https://github.com/webstreamr/webstreamr/issues/728)) ([3bb7a80](https://github.com/webstreamr/webstreamr/commit/3bb7a800e3662e0bd2ae31ec4b4a61eaee5dde6c))
+* **deps:** update dependency typescript-eslint to v8.55.0 ([#710](https://github.com/webstreamr/webstreamr/issues/710)) ([7ec9c5b](https://github.com/webstreamr/webstreamr/commit/7ec9c5b1473e1e04203421ebbdd0c8d904744e99))
+* **deps:** update dependency typescript-eslint to v8.56.0 ([#719](https://github.com/webstreamr/webstreamr/issues/719)) ([94f5c74](https://github.com/webstreamr/webstreamr/commit/94f5c7438d82f96edfb0692e55eb071642d008a9))
+* **deps:** update eslint monorepo to v9.39.3 ([#727](https://github.com/webstreamr/webstreamr/issues/727)) ([26b6143](https://github.com/webstreamr/webstreamr/commit/26b6143152b8b15f2d79f747dbdb8cb48137a46a))
+* **extractor:** adapt mixdrop host check ([34500ea](https://github.com/webstreamr/webstreamr/commit/34500ea3fc11376eb99a86a08c179137239d612d))
+
+
+### Bug Fixes
+
+* **source:** handle new XDMovies URL protection ([cf8fb4c](https://github.com/webstreamr/webstreamr/commit/cf8fb4cfa47741ef8cb3fd214e7eff24ecc72375))
+
 ## [0.66.3](https://github.com/webstreamr/webstreamr/compare/v0.66.2...v0.66.3) (2026-02-03)
 
 

@@ -1,14 +1,27 @@
 # WebStreamr
 
-[![Tests](https://github.com/webstreamr/webstreamr/workflows/Tests/badge.svg)](https://github.com/webstreamr/webstreamr/actions/workflows/tests.yml)
+[![Tests](https://github.com/webstreamr/webstreamr/actions/workflows/tests.yml/badge.svg)](https://github.com/webstreamr/webstreamr/actions/workflows/tests.yml)
 [![GitHub release](https://img.shields.io/github/v/release/webstreamr/webstreamr)](https://github.com/webstreamr/webstreamr/releases)
 ![GitHub License](https://img.shields.io/github/license/webstreamr/webstreamr)
 
 [Stremio](https://www.stremio.com/) add-on which provides HTTP URLs from streaming websites.
 
+HTTP streams have limitations.
+For a better experience, I'd advise using a Debrid service and WebStreamr as fallback.
+[TorBox](https://torbox.app/subscription?referral=f22eb00d-27ce-4e20-85fc-68da3d018b99) is working very well.
+
 ## Public instance
 
 A public instance is available at https://webstreamr.hayd.uk. Hosting infrastructure for this instance is donated by [ElfHosted](https://elfhosted.com), and independently maintained by [Hayduk](https://hayd.uk).
+
+## Known issues / limitations
+
+- PixelServer / pixeldrain has a daily limit of 6 GB per IP: https://pixeldrain.dev
+- Dropload and SuperVideo on Android do not work because Stremio does not use the `Referer` header properly via HLS playlists: https://github.com/Stremio/stremio-bugs/issues/2389, maybe https://github.com/Stremio/stremio-bugs/issues/1579
+- MediaFlow proxy has to be used in an inefficient way because Stremio on Android or its players cannot deal with HLS playlist with redirects: https://github.com/Stremio/stremio-bugs/issues/1574
+- FlareSolverr cookies cannot be used because Cloudflare does techniques like TLS fingerprinting most likely. But FlareSolverr uses a session per host and should be quick.
+- VidSrc works but rate limits heavily and is therefore only queried as fallback if nothing else is found.
+- RgShows detects shared usage and blocks IPs. It therefore only works on private instances.
 
 ## MediaFlow Proxy
 

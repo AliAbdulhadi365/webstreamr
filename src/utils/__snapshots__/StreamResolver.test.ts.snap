@@ -10,7 +10,7 @@ exports[`resolve adds error info 1`] = `
       },
       "name": "WebStreamr 🇩🇪",
       "title": "🔗 working1",
-      "url": "https://working2.com/",
+      "url": "https://example6.com/",
     },
     {
       "behaviorHints": {
@@ -19,14 +19,14 @@ exports[`resolve adds error info 1`] = `
       },
       "name": "WebStreamr 🇩🇪",
       "title": "🔗 working2",
-      "url": "https://working1.com/",
+      "url": "https://example9.com/",
     },
     {
       "behaviorHints": {
         "bingeGroup": "webstreamr-undefined-undefined-de",
         "notWebReady": true,
       },
-      "externalUrl": "https://example.com/",
+      "externalUrl": "https://example1.com/",
       "name": "WebStreamr 🇩🇪",
       "title": "🔗 hoster.com",
     },
@@ -43,47 +43,47 @@ exports[`resolve adds error info 2`] = `
         "bingeGroup": "webstreamr-undefined-undefined-de",
         "notWebReady": true,
       },
-      "externalUrl": "https://example5.com/",
+      "externalUrl": "https://example14.com/",
       "name": "WebStreamr 🇩🇪",
       "title": "🔗 hoster.com
-❌ Request to example5.com failed with status 418 (I'm a tea pot). Request-id: test.",
+❌ Request to example14.com failed with status 418 (I'm a tea pot). Request-id: test.",
     },
     {
       "behaviorHints": {
         "bingeGroup": "webstreamr-undefined-undefined-de",
         "notWebReady": true,
       },
-      "externalUrl": "https://example4.com/",
+      "externalUrl": "https://example13.com/",
       "name": "WebStreamr 🇩🇪",
       "title": "🔗 hoster.com
-❌ Remote server example4.com has issues. We can't fix this, please try later again.",
+❌ Remote server example13.com has issues. We can't fix this, please try later again.",
     },
     {
       "behaviorHints": {
         "bingeGroup": "webstreamr-undefined-undefined-de",
         "notWebReady": true,
       },
-      "externalUrl": "https://example3.com/",
+      "externalUrl": "https://example12.com/",
       "name": "WebStreamr 🇩🇪",
       "title": "🔗 hoster.com
-⏳ Request queue for example3.com is full. Please try again later or consider self-hosting.",
+⏳ Request queue for example12.com is full. Please try again later or consider self-hosting.",
     },
     {
       "behaviorHints": {
         "bingeGroup": "webstreamr-undefined-undefined-de",
         "notWebReady": true,
       },
-      "externalUrl": "https://example2.com/",
+      "externalUrl": "https://example11.com/",
       "name": "WebStreamr 🇩🇪",
       "title": "🔗 hoster.com
-🐢 Request to example2.com timed out.",
+🐢 Request to example11.com timed out.",
     },
     {
       "behaviorHints": {
         "bingeGroup": "webstreamr-undefined-undefined-de",
         "notWebReady": true,
       },
-      "externalUrl": "https://example2.com/",
+      "externalUrl": "https://example10.com/",
       "name": "WebStreamr 🇩🇪",
       "title": "🔗 hoster.com
 ❌ Request failed. Request-id: test.",
@@ -93,37 +93,37 @@ exports[`resolve adds error info 2`] = `
         "bingeGroup": "webstreamr-undefined-undefined-de",
         "notWebReady": true,
       },
-      "externalUrl": "https://example.com/",
+      "externalUrl": "https://example8.com/",
       "name": "WebStreamr 🇩🇪",
       "title": "🔗 hoster.com
-🚦 Too many recent timeouts when requesting example.com. Please try again later.",
+🚦 Too many recent timeouts when requesting example8.com. Please try again later.",
     },
     {
       "behaviorHints": {
         "bingeGroup": "webstreamr-undefined-undefined-de",
         "notWebReady": true,
       },
-      "externalUrl": "https://example.com/",
+      "externalUrl": "https://example7.com/",
       "name": "WebStreamr 🇩🇪",
       "title": "🔗 hoster.com
-🚦 Request to example.com was rate-limited. Please try again later or consider self-hosting.",
+🚦 Request to example7.com was rate-limited. Please try again later or consider self-hosting.",
     },
     {
       "behaviorHints": {
         "bingeGroup": "webstreamr-undefined-undefined-de",
         "notWebReady": true,
       },
-      "externalUrl": "https://example.com/",
+      "externalUrl": "https://example5.com/",
       "name": "WebStreamr 🇩🇪",
       "title": "🔗 hoster.com
-⚠️ Request to example.com was blocked. Reason: unknown",
+⚠️ Request to example5.com was blocked. Reason: unknown",
     },
     {
       "behaviorHints": {
         "bingeGroup": "webstreamr-undefined-undefined-de",
         "notWebReady": true,
       },
-      "externalUrl": "https://example.com/",
+      "externalUrl": "https://example4.com/",
       "name": "WebStreamr 🇩🇪",
       "title": "🔗 hoster.com
 ⚠️ MediaFlow Proxy authentication failed. Please set the correct password.",
@@ -133,20 +133,20 @@ exports[`resolve adds error info 2`] = `
         "bingeGroup": "webstreamr-undefined-undefined-de",
         "notWebReady": true,
       },
-      "externalUrl": "https://example.com/",
+      "externalUrl": "https://example3.com/",
       "name": "WebStreamr 🇩🇪",
       "title": "🔗 hoster.com
-⚠️ Request to example.com was blocked. Reason: cloudflare_censor",
+⚠️ Request to example3.com was blocked. Reason: cloudflare_censor",
     },
     {
       "behaviorHints": {
         "bingeGroup": "webstreamr-undefined-undefined-de",
         "notWebReady": true,
       },
-      "externalUrl": "https://example.com/",
+      "externalUrl": "https://example2.com/",
       "name": "WebStreamr 🇩🇪",
       "title": "🔗 hoster.com
-⚠️ Request to example.com was blocked. Reason: cloudflare_challenge",
+⚠️ Request to example2.com was blocked. Reason: cloudflare_challenge",
     },
     {
       "behaviorHints": {
@@ -155,7 +155,7 @@ exports[`resolve adds error info 2`] = `
       },
       "name": "WebStreamr 🇩🇪",
       "title": "🔗 working1",
-      "url": "https://working2.com/",
+      "url": "https://example6.com/",
     },
     {
       "behaviorHints": {
@@ -164,14 +164,14 @@ exports[`resolve adds error info 2`] = `
       },
       "name": "WebStreamr 🇩🇪",
       "title": "🔗 working2",
-      "url": "https://working1.com/",
+      "url": "https://example9.com/",
     },
     {
       "behaviorHints": {
         "bingeGroup": "webstreamr-undefined-undefined-de",
         "notWebReady": true,
       },
-      "externalUrl": "https://example.com/",
+      "externalUrl": "https://example1.com/",
       "name": "WebStreamr 🇩🇪",
       "title": "🔗 hoster.com",
     },
@@ -234,6 +234,11 @@ exports[`resolve returns sorted results 1`] = `
     "behaviorHints": {
       "bingeGroup": "webstreamr-meinecloud-dropload-de",
       "notWebReady": true,
+      "proxyHeaders": {
+        "request": {
+          "Referer": "https://dr0pstream.com/",
+        },
+      },
       "videoSize": 1395864371,
     },
     "name": "WebStreamr 🇩🇪 1080p",
@@ -245,6 +250,11 @@ exports[`resolve returns sorted results 1`] = `
     "behaviorHints": {
       "bingeGroup": "webstreamr-mostraguarda-dropload-it",
       "notWebReady": true,
+      "proxyHeaders": {
+        "request": {
+          "Referer": "https://dr0pstream.com/",
+        },
+      },
       "videoSize": 1181116006,
     },
     "name": "WebStreamr 🇮🇹 720p",
@@ -256,6 +266,11 @@ exports[`resolve returns sorted results 1`] = `
     "behaviorHints": {
       "bingeGroup": "webstreamr-mostraguarda-supervideo-it",
       "notWebReady": true,
+      "proxyHeaders": {
+        "request": {
+          "Referer": "https://supervideo.cc/",
+        },
+      },
       "videoSize": 1181116006,
     },
     "name": "WebStreamr 🇮🇹 720p",
@@ -267,6 +282,11 @@ exports[`resolve returns sorted results 1`] = `
     "behaviorHints": {
       "bingeGroup": "webstreamr-meinecloud-supervideo-de",
       "notWebReady": true,
+      "proxyHeaders": {
+        "request": {
+          "Referer": "https://supervideo.cc/",
+        },
+      },
       "videoSize": 1073741824,
     },
     "name": "WebStreamr 🇩🇪 720p",
@@ -283,6 +303,11 @@ exports[`resolve returns sorted results 2`] = `
     "behaviorHints": {
       "bingeGroup": "webstreamr-meinecloud-dropload-de",
       "notWebReady": true,
+      "proxyHeaders": {
+        "request": {
+          "Referer": "https://dr0pstream.com/",
+        },
+      },
       "videoSize": 1395864371,
     },
     "name": "WebStreamr 🇩🇪 1080p",
@@ -294,6 +319,11 @@ exports[`resolve returns sorted results 2`] = `
     "behaviorHints": {
       "bingeGroup": "webstreamr-mostraguarda-dropload-it",
       "notWebReady": true,
+      "proxyHeaders": {
+        "request": {
+          "Referer": "https://dr0pstream.com/",
+        },
+      },
       "videoSize": 1181116006,
     },
     "name": "WebStreamr 🇮🇹 720p",
@@ -305,6 +335,11 @@ exports[`resolve returns sorted results 2`] = `
     "behaviorHints": {
       "bingeGroup": "webstreamr-mostraguarda-supervideo-it",
       "notWebReady": true,
+      "proxyHeaders": {
+        "request": {
+          "Referer": "https://supervideo.cc/",
+        },
+      },
       "videoSize": 1181116006,
     },
     "name": "WebStreamr 🇮🇹 720p",
@@ -316,6 +351,11 @@ exports[`resolve returns sorted results 2`] = `
     "behaviorHints": {
       "bingeGroup": "webstreamr-meinecloud-supervideo-de",
       "notWebReady": true,
+      "proxyHeaders": {
+        "request": {
+          "Referer": "https://supervideo.cc/",
+        },
+      },
       "videoSize": 1073741824,
     },
     "name": "WebStreamr 🇩🇪 720p",
@@ -409,12 +449,17 @@ exports[`resolve skips fallback sources if possible 1`] = `
     "behaviorHints": {
       "bingeGroup": "webstreamr-4khdhub-hubcloud_pixelserver-multi_en_hi",
       "notWebReady": true,
+      "proxyHeaders": {
+        "request": {
+          "Referer": "https://pixeldrain.dev/u/Kd5MqbDS",
+        },
+      },
       "videoSize": 19295140577,
     },
     "name": "WebStreamr 🌐 🇺🇸 🇮🇳 2160p",
     "title": "Wake.Up.Dead.Man.A.Knives.Out.Mystery.2025.2160p.NF.WEB-DL.DUAL.DDP5.1.Atmos.H.265-4kHDHub.Com.mkv
 💾 17.97 GB 🔗 HubCloud (PixelServer) from 4KHDHub",
-    "url": "https://pixeldrain.dev/api/file/Kd5MqbDS",
+    "url": "https://pixeldrain.dev/api/file/Kd5MqbDS?download=",
   },
   {
     "behaviorHints": {
@@ -431,12 +476,17 @@ exports[`resolve skips fallback sources if possible 1`] = `
     "behaviorHints": {
       "bingeGroup": "webstreamr-4khdhub-hubcloud_pixelserver-multi_en_hi",
       "notWebReady": true,
+      "proxyHeaders": {
+        "request": {
+          "Referer": "https://pixeldrain.dev/u/h7hpWDSW",
+        },
+      },
       "videoSize": 10018011217,
     },
     "name": "WebStreamr 🌐 🇺🇸 🇮🇳 1080p",
     "title": "Wake.Up.Dead.Man.A.Knives.Out.Mystery.2025.1080p.NF.WEB-DL.Hindi.DDP5.1.Atmos-English.DDP5.1.Atmos.H.265-4kHdHub.Com.mkv
 💾 9.33 GB 🔗 HubCloud (PixelServer) from 4KHDHub",
-    "url": "https://pixeldrain.dev/api/file/h7hpWDSW",
+    "url": "https://pixeldrain.dev/api/file/h7hpWDSW?download=",
   },
   {
     "behaviorHints": {
@@ -453,12 +503,17 @@ exports[`resolve skips fallback sources if possible 1`] = `
     "behaviorHints": {
       "bingeGroup": "webstreamr-4khdhub-hubcloud_pixelserver-multi_en_hi",
       "notWebReady": true,
+      "proxyHeaders": {
+        "request": {
+          "Referer": "https://pixeldrain.dev/u/yzyxiGzC",
+        },
+      },
       "videoSize": 9985798963,
     },
     "name": "WebStreamr 🌐 🇺🇸 🇮🇳 1080p",
     "title": "Wake.Up.Dead.Man.A.Knives.Out.Mystery.2025.1080p.NF.WEB-DL.Hindi.DDP5.1.Atmos-English.DDP5.1.Atmos.H.264-4kHdHub.Com.mkv
 💾 9.3 GB 🔗 HubCloud (PixelServer) from 4KHDHub",
-    "url": "https://pixeldrain.dev/api/file/yzyxiGzC",
+    "url": "https://pixeldrain.dev/api/file/yzyxiGzC?download=",
   },
   {
     "behaviorHints": {
@@ -475,12 +530,17 @@ exports[`resolve skips fallback sources if possible 1`] = `
     "behaviorHints": {
       "bingeGroup": "webstreamr-4khdhub-hubcloud_pixelserver-multi_en_hi",
       "notWebReady": true,
+      "proxyHeaders": {
+        "request": {
+          "Referer": "https://pixeldrain.dev/u/gPsPz3B7",
+        },
+      },
       "videoSize": 5712306503,
     },
     "name": "WebStreamr 🌐 🇺🇸 🇮🇳 1080p",
     "title": "Wake.Up.Dead.Man.A.Knives.Out.Mystery.2025.1080p.NF.WEB-DL.Hindi.DDP5.1.Atmos-English.DDP5.1.Atmos.HDR-DV.H.265-4kHdHub.Com.mkv
 💾 5.32 GB 🔗 HubCloud (PixelServer) from 4KHDHub",
-    "url": "https://pixeldrain.dev/api/file/gPsPz3B7",
+    "url": "https://pixeldrain.dev/api/file/gPsPz3B7?download=",
   },
   {
     "behaviorHints": {
@@ -497,12 +557,17 @@ exports[`resolve skips fallback sources if possible 1`] = `
     "behaviorHints": {
       "bingeGroup": "webstreamr-4khdhub-hubcloud_pixelserver-multi_en_hi",
       "notWebReady": true,
+      "proxyHeaders": {
+        "request": {
+          "Referer": "https://pixeldrain.dev/u/XsNetT2P",
+        },
+      },
       "videoSize": 1374389534,
     },
     "name": "WebStreamr 🌐 🇺🇸 🇮🇳 1080p",
     "title": "Wake.Up.Dead.Man.A.Knives.Out.Mystery.2025.1080p.NF.WEB-DL.Hindi.AAC5.1-English.AAC5.1.AV1-4kHdHub.Com.mkv
 💾 1.28 GB 🔗 HubCloud (PixelServer) from 4KHDHub",
-    "url": "https://pixeldrain.dev/api/file/XsNetT2P",
+    "url": "https://pixeldrain.dev/api/file/XsNetT2P?download=",
   },
 ]
 `;

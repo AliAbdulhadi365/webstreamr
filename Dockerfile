@@ -1,4 +1,4 @@
-FROM node:24.14.1-trixie-slim AS builder
+FROM node:24.14.1-alpine3.22 AS builder
 WORKDIR /app
 
 COPY package*.json ./
@@ -10,7 +10,7 @@ RUN npm run build
 
 RUN npm ci --only=production
 
-FROM node:24.14.1-trixie-slim
+FROM node:24.14.1-alpine3.22
 WORKDIR /app
 
 COPY --from=builder /app/dist ./dist
